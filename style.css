@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body{
+    background: rgb(195,174,238);
+    background: radial-gradient(circle, rgba(120,174,238,1) 0%, rgba(126,12,164,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+h1{
+    font-weight: 900;
+    text-align: center;
+    margin: 100px auto 100px ;
+    font-weight: 800;
+    color: #fff;
+}
+.heigh{
+    color: #ff3929;
+}
+textarea{
+    width: 600px;
+    height: 250px;
+    background: #403d84;
+    color: #fff;
+    font-size: 15px;
+    background: #434989;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+   margin-bottom: 30px;
+}
+form input{
+    flex:1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 18px;
+    padding:0 30px;
+    border-radius: 8px;
+}
+
+.select-lang{
+    width: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    
+}
+button{
+    background: #ff2963;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+select{
+    flex: 1;
+    color: #fff;
+    background: #403d84;
+    width: 300px;
+    height: 50px;
+    padding: 0 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 35px;
+}
+    
+
+/* Your existing styles */
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+    h1 {
+      margin: 50px auto 50px;
+      font-size: 24px;
+    }
+  
+    textarea {
+      width: 90%;
+      height: 150px;
+      font-size: 14px;
+    }
+  
+    select {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .select-lang {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    button {
+      padding: 8px 20px;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Mid-sized screens */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+      font-size: 36px;
+    }
+  
+    textarea {
+      width: 400px;
+      height: 200px;
+      font-size: 16px;
+    }
+  
+    select {
+      width: 200px;
+      height: 40px;
+    }
+  
+    button {
+      padding: 12px 30px;
+    }
+  }
+  
+  /* Large screens */
+  @media only screen and (min-width: 1025px) {
+    h1 {
+      font-size: 48px;
+    }
+  
+    textarea {
+      width: 600px;
+      height: 250px;
+      font-size: 18px;
+    }
+  
+    select {
+      width: 300px;
+      height: 50px;
+    }
+  
+    button {
+      padding: 16px 40px;
+    }
+  }
+  
